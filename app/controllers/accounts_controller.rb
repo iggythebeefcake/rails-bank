@@ -9,7 +9,7 @@ before_action :set_account, only: [:show, :edit, :destroy, :update]
   end
 
   def new
-    @accounts = current_user.accounts.new
+    @account = current_user.accounts.new
   end
 
   def create
